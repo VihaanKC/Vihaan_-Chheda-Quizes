@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>
+            Maths Quiz
+        </title>
+    </head>
+
+    <body bgcolor="skyblue">
+
+        <h1> Maths Quiz </h1>
+
+        Q1. If e + b + d + f = 5.Then what is the value of each variable?<br> 
+        <input type="radio" name="Question1" >1.15<br> 
+        <input type="radio" name="Question1" >1.45<br>
+        <input type="radio" name="Question1" id="correct1" >1.25<br>
+        <input type="radio" name="Question1" >2.25<br><br>
+
+        Q2. What is the sum of 1.25 and 2.25?<br>
+        <input type="radio" name="Question2" >4.00<br> 
+        <input type="radio" name="Question2" >3.15<br>
+        <input type="radio" name="Question2" >3.25<br>
+        <input type="radio" name="Question2" id="correct2" >3.50<br><br>
+
+        Q3. Which of the following statements is true?<br>
+        <input type="radio" name="Question3" >3 - 9 = 9 - 3<br> 
+        <input type="radio" name="Question3" id="correct3" >(-9) - 3 < 3 - 9<br>
+        <input type="radio" name="Question3" >(-3) - 9 > 3 - 9<br>
+        <input type="radio" name="Question3" >(-3) - 9 < (-9) - 3<br><br>
+
+        Q4. Two Distinct lines meeting at point are called ____________ ?<br>
+        <input type="radio" name="Question4" >Collinear Lines<br> 
+        <input type="radio" name="Question4" id="correct4" >Intersecting Lines<br>
+        <input type="radio" name="Question4" >Parallel Lines<br>
+        <input type="radio" name="Question4" >None of These<br><br>
+
+        Q5. What is the LCM of 2 x 3 x 3 and 2 x 2 x 2 x 3 ?<br>
+        <input type="radio" name="Question5" >62<br> 
+        <input type="radio" name="Question5"id="correct5" >72<br>
+        <input type="radio" name="Question5" >42<br>
+        <input type="radio" name="Question5" >31<br><br>
+
+        <input type="submit" name="submit"  value="Submit Quiz" onclick="result()">
+
+        <script type="text/javascript">
+            function result() {
+
+                var score=0;
+                if(document.getElementById('correct1').checked)
+                {
+                    score++;
+                }
+                if(document.getElementById('correct2').checked)
+                {
+                    score++;
+                }
+                if(document.getElementById('correct3').checked)
+                {
+                    score++;
+                }
+                if(document.getElementById('correct4').checked)
+                {
+                    score++;
+                }
+                if(document.getElementById('correct5').checked)
+                {
+                    score++;
+                }
+                document.write("Your score is:"+score+"");
+                
+
+
+
+
+            }
+        </script>
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+    </body>
+</html>
