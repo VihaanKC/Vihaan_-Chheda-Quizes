@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>
+            Science Quiz
+        </title>
+    </head>
+
+    <body bgcolor="skyblue">
+
+        <h1> Science Quiz </h1>
+
+        Q1. What is the chemical symbol written for Sodium?<br> 
+        <input type="radio" name="Question1" >Au<br> 
+        <input type="radio" name="Question1" >Ag<br>
+        <input type="radio" name="Question1" >Pb<br>
+        <input type="radio" name="Question1" id="correct1" >Na<br><br>
+
+        Q2. Oxygen is a ___________ molecule.<br>
+        <input type="radio" name="Question2" >Monoatomic<br> 
+        <input type="radio" name="Question2" id="correct2" >Diatomic<br>
+        <input type="radio" name="Question2" >Triatomic<br>
+        <input type="radio" name="Question2"  >Polyatomic<br><br>
+
+        Q3. Which among the following is an example of Insectivorous Plant?<br>
+        <input type="radio" name="Question3" id="correct3" >Venus Flytrap<br> 
+        <input type="radio" name="Question3"  >Lotus<br>
+        <input type="radio" name="Question3" >Indian Pipe<br>
+        <input type="radio" name="Question3" >Cuscuta<br><br>
+
+        Q4. What is the S.I. Unit of Heat?<br>
+        <input type="radio" name="Question4" >Fahrenheit<br> 
+        <input type="radio" name="Question4"  >Kelvin<br>
+        <input type="radio" name="Question4" >calorie<br>
+        <input type="radio" name="Question4" id="correct4">Joule<br><br>
+
+        Q5. Which liquid is used in laboratory Thermometer?<br>
+        <input type="radio" name="Question5" >Mercury<br> 
+        <input type="radio" name="Question5" id="correct5" >Alchol<br>
+        <input type="radio" name="Question5" >Water<br>
+        <input type="radio" name="Question5" >None of These<br><br>
+
+        <input type="submit" name="submit"  value="Submit Quiz" onclick="result()">
+
+        <script type="text/javascript">
+            function result() {
+
+                var score=0;
+                if(document.getElementById('correct1').checked)
+                {
+                    score++;
+                }
+                if(document.getElementById('correct2').checked)
+                {
+                    score++;
+                }
+                if(document.getElementById('correct3').checked)
+                {
+                    score++;
+                }
+                if(document.getElementById('correct4').checked)
+                {
+                    score++;
+                }
+                if(document.getElementById('correct5').checked)
+                {
+                    score++;
+                }
+                document.write("Your score is:"+score+"");
+                
+
+
+
+
+            }
+        </script>
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+    </body>
+</html>
